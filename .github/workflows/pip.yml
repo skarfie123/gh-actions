@@ -5,7 +5,10 @@ on:
     branches:
       - main
 jobs:
-  Run-Make-Test:
+  Run-pip-Test:
     runs-on: ubuntu-latest
     steps:
+      - run: python -V
+      - run: pip -V
       - run: pip freeze
+      - run: pip install rich
