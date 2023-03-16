@@ -1,0 +1,13 @@
+name: Make Test
+run-name: ${{ github.actor }} is testing out Makefiles 🚀
+on:
+  push:
+    branches:
+      - master
+jobs:
+  Run-Make-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: make test
