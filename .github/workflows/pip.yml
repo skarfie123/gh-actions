@@ -12,3 +12,4 @@ jobs:
       - run: pip -V
       - run: pip freeze
       - run: pip install rich
+      - run: python -m rich
