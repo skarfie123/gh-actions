@@ -1,0 +1,11 @@
+name: pip Test
+run-name: ${{ github.actor }} is testing out pip 🚀
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Run-Make-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pip freeze
