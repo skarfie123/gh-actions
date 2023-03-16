@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out Makefiles 🚀
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   Run-Make-Test:
     runs-on: ubuntu-latest
